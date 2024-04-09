@@ -4,6 +4,7 @@ import 'package:social_media/screens/home_screen.dart';
 import 'package:social_media/screens/notification_screen.dart';
 import 'package:social_media/screens/search_screen.dart';
 
+
 class NavigationScreen extends StatefulWidget {
    NavigationScreen({super.key});
 
@@ -37,11 +38,13 @@ class _NavigationScreenState extends State<NavigationScreen> {
 
     
 
-    body: _pages[_currentIndex],
+     body: _pages[_currentIndex],
 
-    bottomNavigationBar: BottomNavigationBar(
+    bottomNavigationBar:  BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
+      backgroundColor: Colors.black,
       currentIndex: _currentIndex,
-      selectedItemColor: Color.fromARGB(255, 255, 153, 153),
+      selectedItemColor: const Color.fromARGB(255, 243, 214, 129),
       unselectedItemColor: Colors.grey,
       items:const [
       BottomNavigationBarItem(icon: Icon(Icons.home),
@@ -54,8 +57,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
       label: "notification"),
 
     ],
-    onTap: _changePage ,
-    ),
+     onTap: _changePage ,
+    ), 
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_media/model/card_row.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -19,7 +20,7 @@ class ProfileScreen extends StatelessWidget {
         ),
         Container(
           width: MediaQuery.of(context).size.width,
-            height: 558,
+            height: 500,
             color: Color.fromARGB(255, 207, 227, 213),
            
         )
@@ -38,7 +39,7 @@ class ProfileScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
                     image: const DecorationImage(
-                      image: AssetImage("assets/images/cat1.jpg"),
+                      image: AssetImage("assets/stitch.jpg"),
                     ),
                     ),
                 ),
